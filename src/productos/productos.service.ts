@@ -59,7 +59,7 @@ export class ProductosService {
             .select('*')
             .eq('categoria', categoria)
             .eq('activo', true)
-            .order('titulo');
+            .order('imagen_path');
 
         if (error) throw new Error(error.message);
         return data;
